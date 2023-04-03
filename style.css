@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200&family=Corinthia:wght@700&family=Cormorant+Garamond:wght@300&family=Kalam:wght@300&family=Oswald:wght@200&family=Poppins&family=Tajawal:wght@200;300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Overpass";
+  background-color: rgb(251, 247, 247);
+  overflow-x: hidden;
+}
+
+/* start main showcase styling*/
+.blog-showcase {
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  min-height: 80vh;
+  width: 100%;
+  border-bottom-left-radius: 5rem;
+  position: relative;
+}
+
+.blog-showcase--info {
+  position: relative;
+  z-index: 2;
+}
+
+.blog-showcase::after {
+  content: "";
+  background: url(/images/bg-pattern-intro-desktop.svg);
+  background-size: 224%;
+  background-repeat: no-repeat;
+  background-position-y: 51%;
+  background-position-x: 25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* end main showcase styling*/
+
+/* start main showcase logo styling*/
+
+.blog-logo {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+
+/* end main showcase logo styling*/
+
+/* start main showcase nav link styling */
+.blog-container {
+  width: 80%;
+  margin: auto;
+  
+}
+
+.blog-inner-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+#blog-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+#blog-nav ul li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+}
+.list{
+  margin-left: 3rem;
+}
+
+.list a {
+  font-size: 16px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.list svg{
+  margin-left: 0.5rem;
+}
+
+.list a:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* styling main showcase nav link dropdown start*/
+.main-linkdrop{
+  position: relative;
+  color:hsl(0, 0%, 100%);
+  cursor: pointer;
+
+
+}
+
+.drop-content{
+  background-color: hsl(0, 0%, 100%);;
+  min-width: 170px;
+  height: 160px;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-left: -1rem;
+  padding-left: 1.5rem;
+  padding-top: 2rem; 
+}
+
+.drop-content a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+ 
+}
+
+.drop-content a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.drop-content.show{
+  display: block;
+}
+
+
+/* styling main showcase nav link dropdown end*/
+
+
+
+/* end main showcase nav link styling*/
+
+/* start main showcase register buttons styling*/
+.register-blog {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  
+}
+
+.register-blog .login{
+  padding-top: 1rem;
+}
+
+.login a{
+  color: hsl(0, 0%, 100%);
+  margin-right: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-blog .sign {
+  padding: 0.7rem 0.7rem;
+  border: none;
+  background: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.register-blog .sign:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+
+}
+
+/* end main showcase register buttons styling*/
+
+/* start main showcase text styling*/
+.blog-showcase-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+.blog-showcase-para h1 {
+  font-size: 3.7rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.blog-showcase-para p {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blog-btn1 {
+  text-decoration: none;
+  padding: 0.7rem 0.8rem;
+  border: none;
+  background: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.blog-btn1:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+}
+
+.blog-btn2 {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.blog-btn2:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  font-weight: bold;
+}
+
+/* end main showcase text styling*/
+
+/* start section one styling *****/
+#blog-section-one {
+  min-height: 100vh;
+  padding-top: 10rem;
+  margin-bottom: 25rem;
+
+}
+
+#blog-section-one h1 {
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 10rem;
+  margin-right: 12rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.blog-section-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-text {
+  width: 45%;
+  margin-left: 7rem;
+}
+
+.intro-text h3 {
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 1.5rem;
+}
+
+.intro-text p {
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+.intro-text .intro-para1 {
+  margin-top: 5rem;
+}
+
+.blog-section-image1 {
+  width: 55%;
+  position: relative;
+}
+
+.blog-section-image1 img {
+  width: 150%;
+  position: absolute;
+  right: -30%;
+  top: -65%;
+}
+
+/** end section one styling ****
+
+
+
+/*start section two blog mobile styling*/
+.blog-mobile {
+  background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  min-height: 55vh;
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  position: relative;
+ 
+}
+
+.blog-mobile::after {
+  content: "";
+  background: url(/images/bg-pattern-circles.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+  background-position-x: -45%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.blog-inner-mobile {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-mobile-image {
+  width: 50%;
+  position: relative;
+}
+
+.blog-mobile img {
+  position: absolute;
+  top: -20%;
+}
+
+.blog-mobile-text {
+  width: 50%;
+}
+
+.blog-mobile-text h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  padding-top: 9rem;
+  padding-bottom: 1.7rem;
+}
+
+.blog-mobile-text p {
+  width: 65%;
+  color: rgb(195, 192, 192);
+  line-height: 1.5rem;
+}
+/*end section two blog mobile styling*/
+
+/*start section three blog laptop styling*/
+
+.blog-laptop-design {
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-laptop-image {
+  width: 50%;
+  position: relative;
+}
+.blog-laptop-image img {
+  width: 160%;
+  position: absolute;
+  top: -45%;
+  left: -50%;
+}
+
+.blog-laptop-intro {
+  width: 50%;
+  padding-top: 7rem;
+  padding-right: 7rem;
+}
+
+.laptop-intro h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  color: hsl(208, 49%, 24%);
+  font-weight: bold;
+}
+
+.laptop-para {
+  font-size: 16px;
+  line-height: 1.5rem;
+  width: 90%;
+  margin-bottom: 5rem;
+}
+
+/*end section two blog laptop styling*/
+
+/*start blog footer styling***********/
+.blog-footer {
+  background-color: hsl(240, 10%, 16%);
+  min-height: 40vh;
+  border-top-right-radius: 4rem;
+  font-family: "Ubuntu";
+}
+
+.blog-footer-container {
+  width: 70%;
+  margin: auto;
+}
+
+.blog-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  margin-left: -5rem;
+}
+.blog-footer-item li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-footer-inner h4 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.blog-footer-item ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.blog-footer-inner a {
+  font-size: 16px;
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+}
+
+.blog-footer-inner a:hover {
+  text-decoration: underline;
+}
+
+/*******end blog footer styling*******/
